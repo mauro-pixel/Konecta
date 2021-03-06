@@ -77765,7 +77765,7 @@ try {
 window.axios = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
 window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 window.axios.defaults.headers.common['Accept'] = 'application/json';
-window.axios.defaults.baseURL = "http://localhost:8000/prueba-blog/public/" + 'api';
+window.axios.defaults.baseURL = "http://localhost:8000/Konecta/prueba-blog/public/" + 'api';
 
 /***/ }),
 
@@ -78252,7 +78252,7 @@ var Category = /*#__PURE__*/function (_React$Component) {
         id: "main",
         className: "eight columns"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-        src: "http://localhost:8000/prueba-blog/public/" + "assets/website/images/ajax-loader.gif",
+        src: "http://localhost:8000/Konecta/prueba-blog/public/" + "assets/website/images/ajax-loader.gif",
         style: {
           display: this.state.spinner == true ? "block" : "none"
         }
@@ -78362,7 +78362,7 @@ var Home = /*#__PURE__*/function (_React$Component) {
         id: "main",
         className: "eight columns"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-        src: "http://localhost:8000/prueba-blog/public/" + "assets/website/images/ajax-loader.gif",
+        src: "http://localhost:8000/Konecta/prueba-blog/public/" + "assets/website/images/ajax-loader.gif",
         style: {
           display: this.state.spinner == true ? "block" : "none"
         }
@@ -78665,7 +78665,7 @@ var Post = /*#__PURE__*/function (_React$Component) {
         id: "main",
         className: "eight columns"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-        src: "http://localhost:8000/prueba-blog/public/" + "assets/website/images/ajax-loader.gif",
+        src: "http://localhost:8000/Konecta/prueba-blog/public/" + "assets/website/images/ajax-loader.gif",
         style: {
           display: this.state.spinner == true ? "block" : "none"
         }
@@ -78690,7 +78690,7 @@ var Post = /*#__PURE__*/function (_React$Component) {
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "post-thumb"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-        src: "http://localhost:8000/prueba-blog/public/" + "uploads/".concat(this.state.post.image)
+        src: "http://localhost:8000/Konecta/prueba-blog/public/" + "uploads/".concat(this.state.post.image)
       }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "entry-content"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
@@ -78845,7 +78845,7 @@ var Register = /*#__PURE__*/function (_React$Component) {
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         id: "main",
         className: "eight columns"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", null, "Create account"), this.state.error_message ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", null, "Crear cuenta"), this.state.error_message ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "alert alert-danger"
       }, this.state.error_message) : null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("form", {
         name: "contactForm",
@@ -79031,7 +79031,7 @@ var Tag = /*#__PURE__*/function (_React$Component) {
         id: "main",
         className: "eight columns"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-        src: "http://localhost:8000/prueba-blog/public/" + "assets/website/images/ajax-loader.gif",
+        src: "http://localhost:8000/Konecta/prueba-blog/public/" + "assets/website/images/ajax-loader.gif",
         style: {
           display: this.state.spinner == true ? "block" : "none"
         }
@@ -79094,7 +79094,7 @@ var Article = function Article(props) {
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "post-thumb"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-    src: "http://localhost:8000/prueba-blog/public/" + "uploads/".concat(props.post.image),
+    src: "http://localhost:8000/Konecta/prueba-blog/public/" + "uploads/".concat(props.post.image),
     width: "614"
   }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "entry-content"
@@ -79267,7 +79267,7 @@ var Comments = function Comments(props) {
       className: "avatar"
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
       className: "avatar",
-      src: "http://localhost:8000/prueba-blog/public/" + "assets/website/images/user-01.png",
+      src: "http://localhost:8000/Konecta/prueba-blog/public/" + "assets/website/images/user-01.png",
       alt: "",
       width: "50",
       height: "50"
@@ -79852,7 +79852,7 @@ if(false) {}
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! /Applications/MAMP/htdocs/prueba-blog/resources/js/website.js */"./resources/js/website.js");
+module.exports = __webpack_require__(/*! /Applications/MAMP/htdocs/Konecta/prueba-blog/resources/js/website.js */"./resources/js/website.js");
 
 
 /***/ }),

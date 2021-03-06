@@ -28,7 +28,7 @@ class Form extends React.Component {
                         <input
                             type="text"
                             className="form-control"
-                            placeholder="Category title"
+                            placeholder="Titulo categoria"
                             onChange={this.props.onchange}
                             value={
                                 this.props.categories.category.title

@@ -25,7 +25,7 @@ class Form extends React.Component {
                         <input
                             type="text"
                             className="form-control"
-                            placeholder="User name"
+                            placeholder="Nombre"
                             onChange={this.props.handleUserChange}
                             value={
                                 this.props.user.name ? this.props.user.name : ""
@@ -52,7 +52,7 @@ class Form extends React.Component {
                         <input
                             type="text"
                             className="form-control"
-                            placeholder="User email"
+                            placeholder="Email"
                             onChange={this.props.handleUserChange}
                             value={
                                 this.props.user.email
@@ -81,7 +81,7 @@ class Form extends React.Component {
                         <input
                             type="password"
                             className="form-control"
-                            placeholder="Password"
+                            placeholder="Contraseña"
                             onChange={this.props.handleUserChange}
                             value={
                                 this.props.user.password

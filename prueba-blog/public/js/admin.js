@@ -74356,7 +74356,7 @@ var Form = /*#__PURE__*/function (_React$Component) {
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", null, "T\xEDtulo de la categor\xEDa"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
         type: "text",
         className: "form-control",
-        placeholder: "Category title",
+        placeholder: "Titulo categoria",
         onChange: this.props.onchange,
         value: this.props.categories.category.title ? this.props.categories.category.title : "",
         name: "title"
@@ -76379,7 +76379,7 @@ var Profile = /*#__PURE__*/function (_React$Component) {
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "box-body box-profile"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-        src: "http://localhost:8000/prueba-blog/public/" + "assets/admin/dist/img/avatar04.png",
+        src: "http://localhost:8000/Konecta/prueba-blog/public/" + "assets/admin/dist/img/avatar04.png",
         className: "profile-user-img img-responsive img-circle"
       }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", {
         className: "profile-username text-center"
@@ -77944,7 +77944,7 @@ var Form = /*#__PURE__*/function (_React$Component) {
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", null, "Nombre"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
         type: "text",
         className: "form-control",
-        placeholder: "User name",
+        placeholder: "Nombre",
         onChange: this.props.handleUserChange,
         value: this.props.user.name ? this.props.user.name : "",
         name: "name"
@@ -77957,7 +77957,7 @@ var Form = /*#__PURE__*/function (_React$Component) {
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", null, "Email"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
         type: "text",
         className: "form-control",
-        placeholder: "User email",
+        placeholder: "Email",
         onChange: this.props.handleUserChange,
         value: this.props.user.email ? this.props.user.email : "",
         name: "email"
@@ -77970,7 +77970,7 @@ var Form = /*#__PURE__*/function (_React$Component) {
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", null, "Contrase\xF1a"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
         type: "password",
         className: "form-control",
-        placeholder: "Password",
+        placeholder: "Contrase\xF1a",
         onChange: this.props.handleUserChange,
         value: this.props.user.password ? this.props.user.password : "",
         name: "password"
@@ -78311,7 +78311,7 @@ var Header = /*#__PURE__*/function (_React$Component) {
         className: "dropdown-toggle",
         "data-toggle": "dropdown"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-        src: "http://localhost:8000/prueba-blog/public/" + "assets/admin/dist/img/avatar04.png",
+        src: "http://localhost:8000/Konecta/prueba-blog/public/" + "assets/admin/dist/img/avatar04.png",
         className: "user-image",
         alt: "User Image"
       }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
@@ -78321,7 +78321,7 @@ var Header = /*#__PURE__*/function (_React$Component) {
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
         className: "user-header"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-        src: "http://localhost:8000/prueba-blog/public/" + "assets/admin/dist/img/avatar04.png",
+        src: "http://localhost:8000/Konecta/prueba-blog/public/" + "assets/admin/dist/img/avatar04.png",
         className: "img-circle",
         alt: "User Image"
       }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, localStorage.getItem("user.name"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("small", null, "Member since", " ", localStorage.getItem("user.created_at")))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
@@ -78538,7 +78538,7 @@ var Sidebar = function Sidebar(props) {
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "pull-left image"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-    src: "http://localhost:8000/prueba-blog/public/" + "assets/admin/dist/img/avatar04.png",
+    src: "http://localhost:8000/Konecta/prueba-blog/public/" + "assets/admin/dist/img/avatar04.png",
     className: "img-circle",
     alt: "User Image"
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -80732,7 +80732,7 @@ try {
 window.axios = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
 window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 window.axios.defaults.headers.common['Accept'] = 'application/json';
-window.axios.defaults.baseURL = "http://localhost:8000/prueba-blog/public/" + 'api';
+window.axios.defaults.baseURL = "http://localhost:8000/Konecta/prueba-blog/public/" + 'api';
 
 /***/ }),
 
@@ -80754,8 +80754,8 @@ window.axios.defaults.baseURL = "http://localhost:8000/prueba-blog/public/" + 'a
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! /Applications/MAMP/htdocs/prueba-blog/resources/js/admin.js */"./resources/js/admin.js");
-module.exports = __webpack_require__(/*! /Applications/MAMP/htdocs/prueba-blog/resources/sass/app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! /Applications/MAMP/htdocs/Konecta/prueba-blog/resources/js/admin.js */"./resources/js/admin.js");
+module.exports = __webpack_require__(/*! /Applications/MAMP/htdocs/Konecta/prueba-blog/resources/sass/app.scss */"./resources/sass/app.scss");
 
 
 /***/ })

@@ -65,7 +65,7 @@ class Register extends React.Component {
             <div id="content-wrap">
                 <div className="row">
                     <div id="main" className="eight columns">
-                        <h2>Create account</h2>
+                        <h2>Crear cuenta</h2>
 
                         {this.state.error_message ? (
                             <div className="alert alert-danger">
