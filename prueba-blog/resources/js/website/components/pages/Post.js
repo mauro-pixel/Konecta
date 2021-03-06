@@ -211,7 +211,7 @@ class Post extends React.Component {
                                             this.state.post.approved_comments
                                                 .length
                                         }{" "}
-                                        Comntarios
+                                        Comentarios
                                     </h3>
 
                                     <Comments

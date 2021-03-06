@@ -49,13 +49,11 @@ class UsersController extends Controller
         $this->validate($request, [
             'name' => 'required|unique:users',
             'email' => 'required|email|unique:users',
-            'mobile_number' => 'unique:users',
             'password' => 'required|min:6',
         ]);
         $user = new User();
         $user->name = $request->name;
         $user->email = $request->email;
-        $user->mobile_number = $request->mobile_number;
         $user->password = bcrypt($request->password);
         if ($request->has('is_admin') && $request->is_admin == 1) {
             $user->is_admin = 1;
@@ -106,7 +104,6 @@ class UsersController extends Controller
         $this->validate($request, [
             'name' => 'required|unique:users,name,' . $user->id,
             'email' => 'required|email|unique:users,email,' . $user->id,
-            'mobile_number' => 'unique:users,mobile_number,' . $user->id,
             'password' => ($request->password != '' ? 'min:6' : ''),
         ]);
         $user->name = $request->name;
@@ -155,7 +152,6 @@ class UsersController extends Controller
         $this->validate($request, [
             'name' => 'required|unique:users,name,' . $user->id,
             'email' => 'required|email|unique:users,email,' . $user->id,
-            'mobile_number' => 'unique:users,mobile_number,' . $user->id,
             'password' => ($request->password != '' ? 'min:6' : ''),
         ]);
         $user->name = $request->name;

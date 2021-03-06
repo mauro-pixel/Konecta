@@ -38,7 +38,7 @@ class Login extends React.Component {
 
         if (this.state.email == "" || this.state.password == "") {
             this.setState({
-                error_message: "Please enter login credentials"
+                error_message: "Ingrese las credenciales de inicio de sesión"
             });
 
             return false;

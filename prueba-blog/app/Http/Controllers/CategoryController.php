@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use App\Category;
 use App\Lib\Helper;
 use Illuminate\Http\Request;
-
+use Illuminate\Support\Str;
 class CategoryController extends Controller
 {
     use Helper;

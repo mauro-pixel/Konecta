@@ -88,7 +88,9 @@ class Add extends React.Component {
     }
 
     handleCkeditorChange(editor) {
-        this.props.handleFieldChange("content", editor.getData());
+        //this.props.handleFieldChange("content", editor.getData());
+        this.props.handleFieldChange("short_text", editor.getData());
+        this.props.handleFieldChange("long_text", editor.getData());
     }
 
     handleSubmit(e) {

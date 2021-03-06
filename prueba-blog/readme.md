@@ -12,6 +12,10 @@
 
 # para migrar la base de datos creada en laravel
 
+# php artisan db:seed
+
+# para inyectarle un usuario la base de datos creada en laravel
+
 # npm run dev
 
 # para inicializar el proyecto

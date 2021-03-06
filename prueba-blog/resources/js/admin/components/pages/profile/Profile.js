@@ -54,7 +54,6 @@ class Profile extends React.Component {
             .then(response => {
                 localStorage.removeItem("user.email");
                 localStorage.removeItem("user.name");
-                localStorage.removeItem("user.mobil_number");
 
                 for (let i in response.data.data) {
                     localStorage.setItem("user." + i, response.data.data[i]);

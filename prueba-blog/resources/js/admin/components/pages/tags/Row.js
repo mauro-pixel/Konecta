@@ -13,7 +13,7 @@ class Row extends React.Component {
     handleDelete(e) {
         e.preventDefault();
 
-        if (confirm("Are you sure?")) {
+        if (confirm("Estas seguro?")) {
             this.props.deleteTag(this.props.tag.id);
         }
     }

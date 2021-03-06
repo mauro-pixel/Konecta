@@ -60,8 +60,8 @@ class PostsController extends Controller
         }
         $this->validate($request, [
             'title' => 'required',
-            'short_text' => 'required',
-            'long_text' => 'required',
+            'short_text' => '',
+            'long_text' => '',
             'image' => 'required',
             'category_id' => 'required'
         ]);
@@ -128,8 +128,8 @@ class PostsController extends Controller
         $post = Post::with('tags')->findOrFail($id);
         $rules = [
             'title' => 'required',
-            'short_text' => 'required',
-            'long_text' => 'required',
+            'short_text' => '',
+            'long_text' => '',
             'category_id' => 'required',
             'published' => 'required'
         ];
