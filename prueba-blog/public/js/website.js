@@ -77983,7 +77983,9 @@ __webpack_require__.r(__webpack_exports__);
 
 var Auth = {
   login: function login(data, successCb, failCb) {
+    console.log(data);
     axios__WEBPACK_IMPORTED_MODULE_0___default.a.post("/login", data).then(function (response) {
+      console.log(respnse);
       successCb(response);
     })["catch"](function (err) {
       failCb(err);
@@ -77995,6 +77997,7 @@ var Auth = {
         Authorization: "Bearer " + localStorage.getItem("user.api_token")
       }
     }).then(function (response) {
+      console.log(response);
       localStorage.clear();
       successCb(response);
     })["catch"](function (err) {
@@ -78003,7 +78006,9 @@ var Auth = {
     });
   },
   register: function register(data, successCb, failCb) {
+    console.log(data);
     axios__WEBPACK_IMPORTED_MODULE_0___default.a.post("/register", data).then(function (response) {
+      console.log(response);
       successCb(response);
     })["catch"](function (err) {
       failCb(err);
@@ -78472,7 +78477,7 @@ var Login = /*#__PURE__*/function (_React$Component) {
 
       if (this.state.email == "" || this.state.password == "") {
         this.setState({
-          error_message: "Please enter login credentials"
+          error_message: "Ingrese las credenciales de inicio de sesión"
         });
         return false;
       }
@@ -78716,7 +78721,7 @@ var Post = /*#__PURE__*/function (_React$Component) {
         to: "/p/" + this.state.post.next_post.id + "/" + this.state.post.next_post.slug
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", null, "Siguiente art\xEDculo"), " ", this.state.post.next_post.title)) : null)) : null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         id: "comments"
-      }, this.state.post.hasOwnProperty("approved_comments") && this.state.post.approved_comments.length > 0 ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, this.state.post.approved_comments.length, " ", "Comntarios"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_partials_Comments__WEBPACK_IMPORTED_MODULE_3__["default"], {
+      }, this.state.post.hasOwnProperty("approved_comments") && this.state.post.approved_comments.length > 0 ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, this.state.post.approved_comments.length, " ", "Comentarios"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_partials_Comments__WEBPACK_IMPORTED_MODULE_3__["default"], {
         comments: this.state.post.approved_comments
       })) : null, localStorage.getItem("user.api_token") != null ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_partials_CommentForm__WEBPACK_IMPORTED_MODULE_4__["default"], null) : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
         to: "/login"

@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>React Laravel Blog | Admin</title>
+    <title> Blog | Admin</title>
 
     <!-- Bootstrap 3.3.7 -->
     <link rel="stylesheet" href="{{ asset('assets/admin') }}/bower_components/bootstrap/dist/css/bootstrap.min.css">

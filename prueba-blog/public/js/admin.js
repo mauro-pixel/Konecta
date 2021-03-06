@@ -73327,7 +73327,9 @@ __webpack_require__.r(__webpack_exports__);
 
 var Auth = {
   login: function login(data, successCb, failCb) {
+    console.log(data);
     axios__WEBPACK_IMPORTED_MODULE_0___default.a.post("/login", data).then(function (response) {
+      console.log(responde);
       successCb(response);
     })["catch"](function (err) {
       failCb(err);
@@ -73339,6 +73341,7 @@ var Auth = {
         Authorization: "Bearer " + localStorage.getItem("user.api_token")
       }
     }).then(function (response) {
+      console.log(responde);
       localStorage.clear();
       successCb(response);
     })["catch"](function (err) {
@@ -75411,7 +75414,9 @@ var Add = /*#__PURE__*/function (_React$Component) {
   }, {
     key: "handleCkeditorChange",
     value: function handleCkeditorChange(editor) {
-      this.props.handleFieldChange("content", editor.getData());
+      //this.props.handleFieldChange("content", editor.getData());
+      this.props.handleFieldChange("short_text", editor.getData());
+      this.props.handleFieldChange("long_text", editor.getData());
     }
   }, {
     key: "handleSubmit",
@@ -76195,7 +76200,7 @@ var Row = /*#__PURE__*/function (_React$Component) {
     value: function handleDelete(e) {
       e.preventDefault();
 
-      if (confirm("Are you sure?")) {
+      if (confirm("Estas seguro?")) {
         this.props.deletePost(this.props.post.id);
       }
     }
@@ -76211,7 +76216,7 @@ var Row = /*#__PURE__*/function (_React$Component) {
       }, "published") : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
         className: "badge bg-gray"
       }, "draft")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, this.props.post.category ? this.props.post.category.title : ""), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, this.props.post.user ? this.props.post.user.name : ""), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
-        to: '/posts/edit/' + this.props.post.id,
+        to: "/posts/edit/" + this.props.post.id,
         className: "btn btn-info btn-sm"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
         className: "fa fa-edit"
@@ -76227,8 +76232,6 @@ var Row = /*#__PURE__*/function (_React$Component) {
 
   return Row;
 }(react__WEBPACK_IMPORTED_MODULE_0___default.a.Component);
-
-;
 
 var mapDispatchToProps = function mapDispatchToProps(dispatch) {
   return {
@@ -76342,7 +76345,6 @@ var Profile = /*#__PURE__*/function (_React$Component) {
       }).then(function (response) {
         localStorage.removeItem("user.email");
         localStorage.removeItem("user.name");
-        localStorage.removeItem("user.mobil_number");
 
         for (var i in response.data.data) {
           localStorage.setItem("user." + i, response.data.data[i]);
@@ -77159,7 +77161,7 @@ var Row = /*#__PURE__*/function (_React$Component) {
     value: function handleDelete(e) {
       e.preventDefault();
 
-      if (confirm("Are you sure?")) {
+      if (confirm("Estas seguro?")) {
         this.props.deleteTag(this.props.tag.id);
       }
     }
