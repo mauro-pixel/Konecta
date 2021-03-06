@@ -2,12 +2,9 @@ import axios from "axios";
 
 const Auth = {
     login: (data, successCb, failCb) => {
-        console.log(data);
         axios
             .post("/login", data)
             .then(response => {
-                console.log(responde);
-
                 successCb(response);
             })
             .catch(err => {
@@ -23,8 +20,6 @@ const Auth = {
                 }
             })
             .then(response => {
-                console.log(responde);
-
                 localStorage.clear();
 
                 successCb(response);

@@ -77983,7 +77983,6 @@ __webpack_require__.r(__webpack_exports__);
 
 var Auth = {
   login: function login(data, successCb, failCb) {
-    console.log(data);
     axios__WEBPACK_IMPORTED_MODULE_0___default.a.post("/login", data).then(function (response) {
       console.log(respnse);
       successCb(response);
@@ -78006,7 +78005,6 @@ var Auth = {
     });
   },
   register: function register(data, successCb, failCb) {
-    console.log(data);
     axios__WEBPACK_IMPORTED_MODULE_0___default.a.post("/register", data).then(function (response) {
       console.log(response);
       successCb(response);

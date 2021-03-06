@@ -2,7 +2,7 @@ import axios from "axios";
 
 const Auth = {
     login: (data, successCb, failCb) => {
-        console.log(data);
+
         axios
             .post("/login", data)
             .then(response => {
@@ -33,7 +33,6 @@ const Auth = {
             });
     },
     register: (data, successCb, failCb) => {
-        console.log(data);
         axios
             .post("/register", data)
             .then(response => {

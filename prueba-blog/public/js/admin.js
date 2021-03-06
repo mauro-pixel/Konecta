@@ -73327,9 +73327,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var Auth = {
   login: function login(data, successCb, failCb) {
-    console.log(data);
     axios__WEBPACK_IMPORTED_MODULE_0___default.a.post("/login", data).then(function (response) {
-      console.log(responde);
       successCb(response);
     })["catch"](function (err) {
       failCb(err);
@@ -73341,7 +73339,6 @@ var Auth = {
         Authorization: "Bearer " + localStorage.getItem("user.api_token")
       }
     }).then(function (response) {
-      console.log(responde);
       localStorage.clear();
       successCb(response);
     })["catch"](function (err) {
